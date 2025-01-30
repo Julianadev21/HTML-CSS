@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Coffee2.ico" type="image/x-icon">
+    
+
+    <title>Modelos de Caixas</title>
+
+    <style>
+
+        h1{/*box level*/
+           background-color:lightgrey;
+           height: 300px;
+           width: 300px;
+           border-width: 10px;
+           border-style: solid;
+           border-color: darkslategray;
+           padding-top: 10px;
+           padding-right: 10px;
+           padding-bottom: 10px;
+           padding-left: 10px;
+           margin-top: 10px;
+           margin-right: 10px;
+           margin-bottom: 20px;
+           margin-left: 10px;
+           outline-width: 5px;
+           outline-style: groove;
+           outline-color: aqua;}
+           /* para centralizar a caixa na tela usar o comando margin:auto 
+           tem como simplificar o código usando o shorthand, seguindo a ordem do border por exemplo ao invés de escrever o border 3 vezes eu escrevo na mesma linha e ele aplica da mesma forma ex: border: 10px solid darkslategray;
+            isso pode ser aplicado em outras funções como o padding,margin,outline */
+
+
+
+           a{ /*inline level*/
+              border-width: 5px;
+              border-style: solid;
+              border-color: chocolate;
+              padding-top: 5px;
+              padding-right: 5px;
+              padding-bottom: 5px;
+             padding-left: 5px; }
+              /*nesse modelo para configurar altura e largura tem que usar a função display:inlineblock*/
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Exemplo de caixa box level</h1>
+
+    <p>Paragráfos também são exemplos de box level, mas os <a href="#">links são exemplos de inline level.</a>Vamos ver como tudo isso funciona.</p>
+    
+    <p></p>
+</body>
+</html>

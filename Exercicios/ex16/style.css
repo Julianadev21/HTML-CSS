@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+*{font-family: Georgia, Times, 'Times New Roman', serif;}
+
+body{background-image: linear-gradient(to right,#EBE9E1, #E9D3A1,#F9BAB4)}
+
+main{
+    background-color: white;
+    width: 600px;
+    height: 800px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #BF8F9C;
+    padding: 10px;
+    margin: auto;}
+
+    h1{ color: #D97A43;
+    text-align:center;
+    text-shadow:1px 1px 2px #aa5e32;}
+
+    h2{ color: #BF8080;}
+
+p{ text-align: justify; }
+
+/* foram usados conceitos de sombreamento,margem boleada,alinhamento de texto,fundo de tela com degradê,cores nas letras*/

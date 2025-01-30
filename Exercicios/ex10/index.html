@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.
+    0">
+    <meta http-equiv='refresh' content="10">
+    <!--comando para atualização da página web automático -->
+    <link rel="shortcut icon" href="Coffee2.ico" type="image/x-icon">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <p>Você pode acessar meu <a href="https://gustavoguanabara.github.io/" target="_blank" rel="external">repositório público no GitHub</a></p>
+<!--tag a (de âncora) com parâmetro href para fazer link de um site para outro. Os parâmetros target e rel são para que quando clicar no link abra uma nova página não havendo sobreposição. essa função é ideal para quando o link é para um site que não é de sua autoria-->
+    <p>Você também pode acessar meu <a href="https://youtube.com/cursoemvideo">conteúdo gratuito no Youtube</a></p>
+
+    <h1>Usando links internos</h1>
+    <p>Está é a primeira página do site. Se você quiser acessar minha <a href="pag002.html" rel="next">segunda página</a></p>
+    <p>Você poderá acessar também nossa <a href="noticias/pag003.html" rel="next">página de noticias</a></p>
+    <!--nesse caso como a página está dentro de uma pasta tem que ter o caminho da pasta e do arquivo html, usei o atalho control + espaço para abrir tudo que estava na pasta de origem do exercicio 10 e selecionei o caminho-->
+    <h1>Links para download</h1>
+    <ul>
+        <li><a href="livro/certificado 170H.pdf" download="meulivro.pdf" type="application/pdf" >Baixar o livro em PDF</a></li>
+        <li><a href="livro/certificado 170H.zip" download="meulivro.zip" type="application/zip">Baixar livro em arquivo ZIP</a></li>
+        <!--tags e paramêtros para acrescentar iten para download na página web, no pdf o navegador reconhece e as vezes abre direto , já no arquivo zip ele faz o download para pasta do computador.-->
+    </ul>
+    
+</body>
+</html>

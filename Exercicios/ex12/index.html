@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Coffee2.ico" type="image/x-icon">
+    <title>Videos em HTML5</title>
+</head>
+<body>
+    <h1>Inserindo videos hospedados localmente</h1>
+    <p>Este video será hospedado em meu próprio servidor.</p>
+
+    <video width="500" poster="imagem/esquiando.jpg" controls>
+        <source src="midia/esquiando.mp4" type="video/mp4">
+        <source src="midia/esquiando.m4v" type="video/mp4">
+        <source src="midia/esquiando.webm" type="video/webm">
+        <source src="midia/esquiando.ogv" type="video/ogg">
+        <p>Seu navegador não tem compatibilidade com a reprodução de videos.</p>
+        <!-- os paramêtros width para regular largura e poster para inserir imagem de capa do video e controls é pra o video dar play. Dessa forma os videos ficam no servidor e acaba consumindo muitos dados sai mais caro pro cliente-->
+    </video>
+
+    <h1>Inserindo videos do Youtube</h1>
+
+    <iframe width="500" height="315" src="https://www.youtube.com/embed/3Bs4LOtIuxg?si=9A1PUPjjap3o-auW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<!-- Dessa forma o video fica hospedado no youtube sendo mais em conta para o cliente e esse link o youtube me forneceu na aba compartilhar / incorporar e copiar o código não abri nenhuma tag. Tbm pode ser usados videos da plataforma vimeo que tbm é possivel copiar o código e alterar configurações do video e não aparece sugestões de próximos videos, porém a plataforma é paga.     -->
+
+    
+</body>
+</html>

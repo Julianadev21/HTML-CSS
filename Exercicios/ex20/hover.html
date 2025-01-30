@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Coffee2.ico" type="image/x-icon">
+
+    <title>Exemplo de hover</title>
+    <!--essa função hover é muito utilizada na DIV e CSS e interage ao passar o cursor em cima de um elemento que queria destacar -->
+<style>
+
+    body{ font-family: Arial, Helvetica, sans-serif;}
+
+    div:hover{ color:red }
+    div > p{ display: none; }
+    div:hover > p{ display: block;
+                   color:antiquewhite;
+                   background-color: red;
+                   padding: 5px;
+                   padding-top: 7px;
+                   width: 170px;}
+                   /* simbolo de > é usado como filho(children) da Div ou seja conteudo é submetido a div*/
+</style>
+
+</head>
+
+<body>
+ <p>Passe o mousse sobre o texto abaixo</p>
+ <div> Passe o mousse aqui
+    <p>TEXTO ESCONDIDO...</p>
+ </div>
+ <p>Fim do Exemplo</p>
+    
+</body>
+</html>

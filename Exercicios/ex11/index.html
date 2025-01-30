@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Coffee2.ico" type="image/x-icon">
+    <title>Mídias em HTML</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+
+    <p>Tente abrir esse site em vários dispositivos ou simplismente aumente e diminua o tamanho do seu navegador.</p>
+
+   <picture>
+    <source media="(max-width:750px)" srcset="imagens/P.png" type="image/png">
+   <source media="(max-width:1050px)" srcset="imagens/M.png" type="image/png"> 
+   <!-- essa tag serve para indicar se caso o navegador seja menor do que a imagem selecionada na tag picture/img é pra ele adaptar com a imagem reserva inserida nessa tag, lembrando que essa tag tem que ser usada do menor para o maior e deve ser inserrida acima da imagem a ser alterada como feito acima-->
+
+     <img src="imagens/G.png" alt="imagem flexivel">
+    </picture> <!-- ela aparece uma imagem pois tem o img dentro, porém ela permite o uso de várias fontes -->
+
+    <h1>Reproduzindo aúdio</h1>
+    <p>Vamos aprender a reproduzir aúdio no HTML5</p>
+<audio src="midia/Distrust The System - The Soundlings.mp3" controls autoplay></audio>
+<!--tag para inserir audio sempre buscando os que tem licença autoral. Na tag audio vc insere o arquivo a ser reproduzido e para tocar insere os paramêtros controls e autoplay. Geralmente os arquivos compatíveis são mp3,wav,ogg. -->
+<p>Outra forma de inserir aúdio</p>
+<audio preload="metadata" autoplay controls>
+<source src="midia/guanacast-33.mp3" type="audio/mpeg">
+<!--Abri a tag audio e apaguei o src que já vem nela e inseri outro source tipo src com type,o paramêtro preload/meta data é para carregar as informações do audio mas o aúdio só será baixado se o usuário clicar para ouvir.-->
+
+</audio>
+
+</body>
+
+</html>

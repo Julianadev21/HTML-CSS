@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+body{ background-color: #e9cec0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+
+    
+    h1{ color: #6B4314;}
+
+    h1#principal{ background-color: #6B4314;
+                  color:#E8D9BF;
+                  text-align: center;}
+
+      /* seletores personalizados
+      EX: Id, Class, Pseudoclasse, pseudoelemento, children
+
+         ID em html usa id e em CSS usa # 
+         id se usa em apenas um elemento ou seja cada id é único não podendo repetir o nome. 
+
+         CLASS em html usa class e em CSS usa .
+         classe pode usar para identificar mais de um elemento
+         pode ter um id e uma classe na mesma linha e pode ter duas classes na mesma linha e várias no documento html */
+
+    h2{ color: #702323; }
+
+    .basico{ color: #552306; }
+
+    .intermediário{ color: #a56f49; }
+
+    .avançado{ color: #6e5340; }
+
+    .destaque { background-color: #aa9f979a;}
+    
+    p{ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}

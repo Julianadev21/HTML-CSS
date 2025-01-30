@@ -1,0 +1,14 @@
+@charset "UTF8";
+ //é regra colocar esse paramêtro em todo arquivo CSS
+
+
+        body{background-color:papayawhip;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 20px;}
+
+            h1{color:rgb(167, 115, 18);}
+
+            h2{color:palevioletred;}
+
+            p{text-align: justify;}
+    
