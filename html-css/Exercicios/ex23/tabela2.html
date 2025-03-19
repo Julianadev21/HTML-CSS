@@ -14,7 +14,8 @@
         /* sentido para usar o margin top, rigth, bottom, left */
 
         table{ width: 500px;
-               border-collapse: collapse; }
+               border-collapse: collapse;
+               position: relative; }
         
         caption{ font-size: 1.5em;
                  font-weight: bold; 
@@ -24,10 +25,21 @@
          td,th{ border: 1px solid black;
                padding: 10px; }
 
-        td.num{ text-align: right;}       
+        tbody > tr:nth-child(odd){ background-color:antiquewhite;} 
+        
+        tbody > tr:nth-child(even){ background-color: lightgrey;} 
 
-        thead, tfoot{ background-color: grey;
-               color: white; }       
+        /* foi usado a pseudoclasse nth-child para realizar o efeito zebrado na tabela. Os termos usados even (par) e odd (ímpar) que tbm podem ser representados por 2n(para par) e 2n-1(para ímpar). */
+
+        td.num{ text-align: right;}    
+        
+        thead > tr > th{ position: sticky;
+                         top: -1px;
+                         background-color: #383838;}
+        /* a função position: sticky serve para fixar o elemento na tabela nesse caso o cabeçalho, ao rolar a página o cabeçalho fica fixo facilitando a visualização e ao chegar no rodapé ele some acompanhando a rolagem. para funcionar precisar seguir a ordem correta thead e seus filhos(>) tr(linha) e th(título da tabela).*/                 
+
+        thead, tfoot{ background-color: #383838;
+                      color: white; }       
 
     </style>
 
@@ -114,9 +126,24 @@
             <td class="num" ><strong>157.916.089</strong></td>
         </tr>
 
-    </tfoot>
-
-  </table>
+    </table>
     
+    <table>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Non distinctio labore dolor magnam. Nostrum adipisci maxime est fugiat quidem placeat error quis et, soluta suscipit alias, aut minus itaque asperiores Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem illo adipisci mollitia sint sapiente quam ducimus rerum sequi laudantium repellendus deleniti, provident nostrum pariatur necessitatibus molestiae harum. Temporibus, accusantium voluptatibus!
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor dolores voluptates quidem distinctio maiores hic amet, facilis, ullam eveniet numquam a? Ad exercitationem, dicta eaque doloribus neque tempora fuga minus. </p>
+         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Non distinctio labore dolor magnam. Nostrum adipisci maxime est fugiat quidem placeat error quis et, soluta suscipit alias, aut minus itaque asperiores Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem illo adipisci mollitia sint sapiente quam ducimus rerum sequi laudantium repellendus deleniti, provident nostrum pariatur necessitatibus molestiae harum. Temporibus, accusantium voluptatibus!
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor dolores voluptates quidem distinctio maiores hic amet, facilis, ullam eveniet numquam a? Ad exercitationem, dicta eaque doloribus neque tempora fuga minus. </p>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Non distinctio labore dolor magnam. Nostrum adipisci maxime est fugiat quidem placeat error quis et, soluta suscipit alias, aut minus itaque asperiores Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem illo adipisci mollitia sint sapiente quam ducimus rerum sequi laudantium repellendus deleniti, provident nostrum pariatur necessitatibus molestiae harum. Temporibus, accusantium voluptatibus!
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor dolores voluptates quidem distinctio maiores hic amet, facilis, ullam eveniet numquam a? Ad exercitationem, dicta eaque doloribus neque tempora fuga minus. </p>        
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Non distinctio labore dolor magnam. Nostrum adipisci maxime est fugiat quidem placeat error quis et, soluta suscipit alias, aut minus itaque asperiores Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem illo adipisci mollitia sint sapiente quam ducimus rerum sequi laudantium repellendus deleniti, provident nostrum pariatur necessitatibus molestiae harum. Temporibus, accusantium voluptatibus!
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor dolores voluptates quidem distinctio maiores hic amet, facilis, ullam eveniet numquam a? Ad exercitationem, dicta eaque doloribus neque tempora fuga minus. </p>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Non distinctio labore dolor magnam. Nostrum adipisci maxime est fugiat quidem placeat error quis et, soluta suscipit alias, aut minus itaque asperiores Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem illo adipisci mollitia sint sapiente quam ducimus rerum sequi laudantium repellendus deleniti, provident nostrum pariatur necessitatibus molestiae harum. Temporibus, accusantium voluptatibus!
+                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor dolores voluptates quidem distinctio maiores hic amet, facilis, ullam eveniet numquam a? Ad exercitationem, dicta eaque doloribus neque tempora fuga minus. </p>
+                 <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Non distinctio labore dolor magnam. Nostrum adipisci maxime est fugiat quidem placeat error quis et, soluta suscipit alias, aut minus itaque asperiores Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem illo adipisci mollitia sint sapiente quam ducimus rerum sequi laudantium repellendus deleniti, provident nostrum pariatur necessitatibus molestiae harum. Temporibus, accusantium voluptatibus!
+                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor dolores voluptates quidem distinctio maiores hic amet, facilis, ullam eveniet numquam a? Ad exercitationem, dicta eaque doloribus neque tempora fuga minus. </p>
+                 <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Non distinctio labore dolor magnam. Nostrum adipisci maxime est fugiat quidem placeat error quis et, soluta suscipit alias, aut minus itaque asperiores Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem illo adipisci mollitia sint sapiente quam ducimus rerum sequi laudantium repellendus deleniti, provident nostrum pariatur necessitatibus molestiae harum. Temporibus, accusantium voluptatibus!
+                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor dolores voluptates quidem distinctio maiores hic amet, facilis, ullam eveniet numquam a? Ad exercitationem, dicta eaque doloribus neque tempora fuga minus. </p>
+    </table>
+
 </body>
 </html>
