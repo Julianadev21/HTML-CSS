@@ -1,16 +1,111 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title> Tabelas </title>
 
+    <style>
+
+        table{ margin-left: 30px;
+               border-collapse: collapse; 
+               width: 400px;
+               height: 300px;
+               font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; }
+        
+        caption{ background-image:linear-gradient(aquamarine, rgb(142, 142, 233) ) ;
+                 padding: 15px; 
+                 font-weight: bold;
+                 font-size: 1.5em; }   
+        
+        h1{ margin: 20px 0px 40px 90px; }
+
+        th,td{ border: 2px solid black;
+               text-align: center;
+               padding: 8px; }    
+
+        th{ background-color: lightblue;}    
+        
+       col.cnome{ background-color: rgb(144, 204, 204); }
+
+       col.csexo, col.cidade{  background-color: lightgrey; }
+
+       col.cprofissão{ background-color: rgb(144, 204, 204); }
+
+       /* Para tornar a tabela responsiva usa-se o paramêtro overflow Y ou X sendo Y para vertical e X para horizontal de rolagem da página.
+       Selecione toda a tag table depois envelopa com uma div, dai cria um ID e no CSS abre o comando overflow :auto para fixar o conteúdo e criar uma barra de rolagem na tabela. Geralmente é usado para tabelas grandes. */
+
+    </style>
 
 </head>
 
 <body>
 
-    
-    
-</body>
-</html>
+    <h1> Exercício de tabelas </h1>
+
+
+    <table>
+
+        <colgroup>
+        
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cidade">
+            <col class="cprofissão"> 
+
+        </colgroup>
+        <!-- a tag colgroup serve para criar classes e selecionar colunas nas tabelas, podendo usar o paramêtro span para colocar em quantas colunas serão aplicadas -->
+
+    <caption> Cadastro </caption>
+
+    <tr>
+        <th scope="col"> Nome </th>
+        <th scope="col"> Sexo </th>
+        <th scope="col"> Idade </th>
+        <th scope="col">Profissão </th>
+        
+    </tr>
+
+    <tr>
+        <td> Marcos Vinícius </td>
+        <td> M </td>
+        <td>35 </td>
+        <td> Cientista da Computação </td>
+    </tr>
+
+    <tr>
+        <td> Letícia </td>
+        <td> F </td>
+        <td> 25 </td>
+        <td> Técnica de Enfermagem </td>
+    </tr>
+
+    <tr>
+        <td> Rosimere </td>
+        <td> F </td>
+        <td> 53 </td>
+        <td> Autonôma </td>
+    </tr>
+
+    <tr>
+        <td> Valessa </td>
+        <td> F </td>
+        <td> 41 </td>
+        <td> Administradora </td>
+    </tr>
+
+    <tr>
+        <td> Verônica </td>
+        <td> F </td>
+        <td> 38 </td>
+        <td> Administradora </td>
+    </tr>
+
+
+    </table>
+
+    </body>
+
+    </html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,40 +8,62 @@
     <title>Tabelas</title>
 
     <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
 
-        body{ font-family: Arial, Helvetica, sans-serif; }
+        h1 {
+            margin: 30px 30px 60px 40px;
+        }
 
-        h1{  margin: 30px 30px 60px 40px;}
         /* sentido para usar o margin top, rigth, bottom, left */
 
-        table{ width: 500px;
-               border-collapse: collapse;
-               position: relative; }
-        
-        caption{ font-size: 1.5em;
-                 font-weight: bold; 
-                 padding: 5px;
-                 background-color: lightgray; }
-                       
-         td,th{ border: 1px solid black;
-               padding: 10px; }
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
 
-        tbody > tr:nth-child(odd){ background-color:antiquewhite;} 
-        
-        tbody > tr:nth-child(even){ background-color: lightgrey;} 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 5px;
+            background-color: lightgray;
+        }
+
+        td,
+        th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        tbody>tr:nth-child(odd) {
+            background-color: antiquewhite;
+        }
+
+        tbody>tr:nth-child(even) {
+            background-color: lightgrey;
+        }
 
         /* foi usado a pseudoclasse nth-child para realizar o efeito zebrado na tabela. Os termos usados even (par) e odd (ímpar) que tbm podem ser representados por 2n(para par) e 2n-1(para ímpar). */
 
-        td.num{ text-align: right;}    
-        
-        thead > tr > th{ position: sticky;
-                         top: -1px;
-                         background-color: #383838;}
-        /* a função position: sticky serve para fixar o elemento na tabela nesse caso o cabeçalho, ao rolar a página o cabeçalho fica fixo facilitando a visualização e ao chegar no rodapé ele some acompanhando a rolagem. para funcionar precisar seguir a ordem correta thead e seus filhos(>) tr(linha) e th(título da tabela).*/                 
+        td.num {
+            text-align: right;
+        }
 
-        thead, tfoot{ background-color: #383838;
-                      color: white; }       
+        thead>tr>th {
+            position: sticky;
+            top: -1px;
+            background-color: #383838;
+        }
 
+        /* a função position: sticky serve para fixar o elemento na tabela nesse caso o cabeçalho, ao rolar a página o cabeçalho fica fixo facilitando a visualização e ao chegar no rodapé ele some acompanhando a rolagem. para funcionar precisar seguir a ordem correta thead e seus filhos(>) tr(linha) e th(título da tabela).*/
+
+        thead,
+        tfoot {
+            background-color: #383838;
+            color: white;
+        }
     </style>
 
 </head>
@@ -48,102 +71,145 @@
 <body>
 
     <h1>Uso de tabelas grandes</h1>
- 
- <!-- Anatomia de tabelas grandes 
+
+    <!-- Anatomia de tabelas grandes 
   table, thead, tbody, tfoot ( as três são para cabeçalho, corpo e rodapé e dentro delas podem ter td,tr,th) -->
 
-  <table>
+    <table>
 
-    <caption>População das Unidades Federativas</caption>
-    <!-- caption legenda da tabela-->
+        <caption>População das Unidades Federativas</caption>
+        <!-- caption legenda da tabela-->
 
-    <thead>
-        <tr> 
-             <th scope="col">Estado</th> 
-             <th scope="col" style="width: 150px;">População</th>
-             <!-- a função scope serve para facilitar o buscador se os conteúdos estão na mesma linha (row) ou mesma coluna (col)
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 150px;">População</th>
+                <!-- a função scope serve para facilitar o buscador se os conteúdos estão na mesma linha (row) ou mesma coluna (col)
               apliquei o style/width para ajustar o tamanho da coluna 'população' -->
-        </tr>
-    </thead>
+            </tr>
+        </thead>
 
-    <tbody>
-        <tr>
-            <td>São Paulo</td>
-            <td class="num">45 973 194</td>   
-        </tr>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 973 194</td>
+            </tr>
 
-        <tr>
-            <td>Minas Gerais</td>
-            <td class="num">21 322 691</td>
-        </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 322 691</td>
+            </tr>
 
-        <tr>
-            <td>Rio de Janeiro</td>
-            <td class="num">17 219 679</td>
-        </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 219 679</td>
+            </tr>
 
-        <tr>
-            <td>Bahia</td>
-            <td class="num">14 850 513</td> 
-        </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 850 513</td>
+            </tr>
 
-        <tr>
-            <td>Paraná</td>
-            <td class="num">11 824 665</td>
-        </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11 824 665</td>
+            </tr>
 
-        <tr>
-            <td>Rio Grande do Sul</td>
-            <td class="num">11 229 915</td>  
-        </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11 229 915</td>
+            </tr>
 
-        <tr>
-            <td>Pernambuco</td>
-            <td class="num">9 539 029</td>  
-        </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9 539 029</td>
+            </tr>
 
-        <tr>
-            <td>Ceará</td>
-            <td class="num">9 233 656</td>  
-        </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">9 233 656</td>
+            </tr>
 
-        <tr>
-            <td>Pará</td>
-            <td class="num">8 664 306</td>
-        </tr>
-        <tr>
-            <td>Santa Catarina</td>
-            <td class="num">8 058 441</td>
-        </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">8 664 306</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">8 058 441</td>
+            </tr>
 
 
-    </tbody>
+        </tbody>
 
-    <tfoot>
+        <tfoot>
 
-        <tr>
-            <th scope="row">Total de habitantes</th>
-            <td class="num" ><strong>157.916.089</strong></td>
-        </tr>
+            <tr>
+                <th scope="row">Total de habitantes</th>
+                <td class="num"><strong>157.916.089</strong></td>
+            </tr>
 
     </table>
-    
+
     <table>
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Non distinctio labore dolor magnam. Nostrum adipisci maxime est fugiat quidem placeat error quis et, soluta suscipit alias, aut minus itaque asperiores Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem illo adipisci mollitia sint sapiente quam ducimus rerum sequi laudantium repellendus deleniti, provident nostrum pariatur necessitatibus molestiae harum. Temporibus, accusantium voluptatibus!
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor dolores voluptates quidem distinctio maiores hic amet, facilis, ullam eveniet numquam a? Ad exercitationem, dicta eaque doloribus neque tempora fuga minus. </p>
-         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Non distinctio labore dolor magnam. Nostrum adipisci maxime est fugiat quidem placeat error quis et, soluta suscipit alias, aut minus itaque asperiores Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem illo adipisci mollitia sint sapiente quam ducimus rerum sequi laudantium repellendus deleniti, provident nostrum pariatur necessitatibus molestiae harum. Temporibus, accusantium voluptatibus!
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor dolores voluptates quidem distinctio maiores hic amet, facilis, ullam eveniet numquam a? Ad exercitationem, dicta eaque doloribus neque tempora fuga minus. </p>
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Non distinctio labore dolor magnam. Nostrum adipisci maxime est fugiat quidem placeat error quis et, soluta suscipit alias, aut minus itaque asperiores Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem illo adipisci mollitia sint sapiente quam ducimus rerum sequi laudantium repellendus deleniti, provident nostrum pariatur necessitatibus molestiae harum. Temporibus, accusantium voluptatibus!
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor dolores voluptates quidem distinctio maiores hic amet, facilis, ullam eveniet numquam a? Ad exercitationem, dicta eaque doloribus neque tempora fuga minus. </p>        
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Non distinctio labore dolor magnam. Nostrum adipisci maxime est fugiat quidem placeat error quis et, soluta suscipit alias, aut minus itaque asperiores Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem illo adipisci mollitia sint sapiente quam ducimus rerum sequi laudantium repellendus deleniti, provident nostrum pariatur necessitatibus molestiae harum. Temporibus, accusantium voluptatibus!
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor dolores voluptates quidem distinctio maiores hic amet, facilis, ullam eveniet numquam a? Ad exercitationem, dicta eaque doloribus neque tempora fuga minus. </p>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Non distinctio labore dolor magnam. Nostrum adipisci maxime est fugiat quidem placeat error quis et, soluta suscipit alias, aut minus itaque asperiores Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem illo adipisci mollitia sint sapiente quam ducimus rerum sequi laudantium repellendus deleniti, provident nostrum pariatur necessitatibus molestiae harum. Temporibus, accusantium voluptatibus!
-                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor dolores voluptates quidem distinctio maiores hic amet, facilis, ullam eveniet numquam a? Ad exercitationem, dicta eaque doloribus neque tempora fuga minus. </p>
-                 <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Non distinctio labore dolor magnam. Nostrum adipisci maxime est fugiat quidem placeat error quis et, soluta suscipit alias, aut minus itaque asperiores Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem illo adipisci mollitia sint sapiente quam ducimus rerum sequi laudantium repellendus deleniti, provident nostrum pariatur necessitatibus molestiae harum. Temporibus, accusantium voluptatibus!
-                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor dolores voluptates quidem distinctio maiores hic amet, facilis, ullam eveniet numquam a? Ad exercitationem, dicta eaque doloribus neque tempora fuga minus. </p>
-                 <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Non distinctio labore dolor magnam. Nostrum adipisci maxime est fugiat quidem placeat error quis et, soluta suscipit alias, aut minus itaque asperiores Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem illo adipisci mollitia sint sapiente quam ducimus rerum sequi laudantium repellendus deleniti, provident nostrum pariatur necessitatibus molestiae harum. Temporibus, accusantium voluptatibus!
-                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor dolores voluptates quidem distinctio maiores hic amet, facilis, ullam eveniet numquam a? Ad exercitationem, dicta eaque doloribus neque tempora fuga minus. </p>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Non distinctio labore dolor magnam. Nostrum
+            adipisci maxime est fugiat quidem placeat error quis et, soluta suscipit alias, aut minus itaque asperiores
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem illo adipisci mollitia sint sapiente quam
+            ducimus rerum sequi laudantium repellendus deleniti, provident nostrum pariatur necessitatibus molestiae
+            harum. Temporibus, accusantium voluptatibus!
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor dolores voluptates quidem distinctio maiores
+            hic amet, facilis, ullam eveniet numquam a? Ad exercitationem, dicta eaque doloribus neque tempora fuga
+            minus. </p>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Non distinctio labore dolor magnam. Nostrum
+            adipisci maxime est fugiat quidem placeat error quis et, soluta suscipit alias, aut minus itaque asperiores
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem illo adipisci mollitia sint sapiente quam
+            ducimus rerum sequi laudantium repellendus deleniti, provident nostrum pariatur necessitatibus molestiae
+            harum. Temporibus, accusantium voluptatibus!
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor dolores voluptates quidem distinctio maiores
+            hic amet, facilis, ullam eveniet numquam a? Ad exercitationem, dicta eaque doloribus neque tempora fuga
+            minus. </p>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Non distinctio labore dolor magnam. Nostrum
+            adipisci maxime est fugiat quidem placeat error quis et, soluta suscipit alias, aut minus itaque asperiores
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem illo adipisci mollitia sint sapiente quam
+            ducimus rerum sequi laudantium repellendus deleniti, provident nostrum pariatur necessitatibus molestiae
+            harum. Temporibus, accusantium voluptatibus!
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor dolores voluptates quidem distinctio maiores
+            hic amet, facilis, ullam eveniet numquam a? Ad exercitationem, dicta eaque doloribus neque tempora fuga
+            minus. </p>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Non distinctio labore dolor magnam. Nostrum
+            adipisci maxime est fugiat quidem placeat error quis et, soluta suscipit alias, aut minus itaque asperiores
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem illo adipisci mollitia sint sapiente quam
+            ducimus rerum sequi laudantium repellendus deleniti, provident nostrum pariatur necessitatibus molestiae
+            harum. Temporibus, accusantium voluptatibus!
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor dolores voluptates quidem distinctio maiores
+            hic amet, facilis, ullam eveniet numquam a? Ad exercitationem, dicta eaque doloribus neque tempora fuga
+            minus. </p>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Non distinctio labore dolor magnam. Nostrum
+            adipisci maxime est fugiat quidem placeat error quis et, soluta suscipit alias, aut minus itaque asperiores
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem illo adipisci mollitia sint sapiente quam
+            ducimus rerum sequi laudantium repellendus deleniti, provident nostrum pariatur necessitatibus molestiae
+            harum. Temporibus, accusantium voluptatibus!
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor dolores voluptates quidem distinctio maiores
+            hic amet, facilis, ullam eveniet numquam a? Ad exercitationem, dicta eaque doloribus neque tempora fuga
+            minus. </p>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Non distinctio labore dolor magnam. Nostrum
+            adipisci maxime est fugiat quidem placeat error quis et, soluta suscipit alias, aut minus itaque asperiores
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem illo adipisci mollitia sint sapiente quam
+            ducimus rerum sequi laudantium repellendus deleniti, provident nostrum pariatur necessitatibus molestiae
+            harum. Temporibus, accusantium voluptatibus!
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor dolores voluptates quidem distinctio maiores
+            hic amet, facilis, ullam eveniet numquam a? Ad exercitationem, dicta eaque doloribus neque tempora fuga
+            minus. </p>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Non distinctio labore dolor magnam. Nostrum
+            adipisci maxime est fugiat quidem placeat error quis et, soluta suscipit alias, aut minus itaque asperiores
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem illo adipisci mollitia sint sapiente quam
+            ducimus rerum sequi laudantium repellendus deleniti, provident nostrum pariatur necessitatibus molestiae
+            harum. Temporibus, accusantium voluptatibus!
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor dolores voluptates quidem distinctio maiores
+            hic amet, facilis, ullam eveniet numquam a? Ad exercitationem, dicta eaque doloribus neque tempora fuga
+            minus. </p>
     </table>
 
 </body>
+
 </html>
