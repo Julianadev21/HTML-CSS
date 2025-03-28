@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Uso de iframe</title>
+
+    <style>
+
+       iframe#tela{ width: 100vh; 
+                    height: 300px;
+                    border: 2px solid black; } 
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Faça uma escolha</h1>
+
+    <ul>
+        <li> <a href="paginas-extras/pag01.html" target="frame"> Primeira página </a> </li>
+          <li> <a href="paginas-extras/pag02.html" target="frame"> Segunda página </a> </li> 
+    
+    </ul>
+
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto ullam blanditiis saepe, mollitia facere rerum non unde laborum assumenda, cum praesentium aperiam eaque aspernatur deserunt minima, aut odio consequatur dolorem.</p>
+
+    <iframe id="tela" name="frame" srcdoc=" <h1> Escolha uma das opções acima </h1>" >
+        <p> Seu navegador não é compatível </p>
+    </iframe>
+    <!-- a propriedade name serve para criar um nome que será colocado no link com o paramêtro target para o conteudo do link carregar dentro do iframe
+     o paramêtro source srcdoc vc insere conteudos em htmlno iframe e no src pode inserir pastas e links. -->
+
+    <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis blanditiis deserunt magnam hic! Itaque ratione ipsum repudiandae sed ipsa, perferendis inventore voluptas quibusdam dolore atque accusantium qui! Quisquam, commodi quae.
+     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae id dolorem reprehenderit doloremque ipsam minima ab ipsa, inventore doloribus aspernatur placeat, temporibus explicabo recusandae eveniet ea, neque sapiente? Magni, exercitationem?
+    </p>
+    
+</body>
+</html>
