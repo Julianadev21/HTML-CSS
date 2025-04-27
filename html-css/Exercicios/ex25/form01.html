@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Formulários</title>
+
+</head>
+
+<body>
+    <h1> Meu primeiro formulário </h1>
+
+    <form action="cadastro.php" autocomplete="off">
+        <!-- função action relacionar os dados do formulário a um servidor.
+         função autocomplete fica lembrando os dados da digitados na caixa
+         tag label(etiqueta) faz relação da caixa doformulário com seu nome ou título. -->
+
+        <p><label for="inome">Nome:</label> <input type="text" name="nome" id="inome"></p>
+
+        <p><label for="isobrenome">Sobrenome:</label> <input type="text" name="sobrenome" id="isobrenome"></p>
+        <p> <input type="submit" value="Enviar"></p>
+    </form>
+    
+</body>
+</html>
