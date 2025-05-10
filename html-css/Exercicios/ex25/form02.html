@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Formulário</title>
+
+</head>
+
+<body>
+    <h1>Teste de formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+
+        <p>
+            <label for="iusu">Usuário</label>
+            <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" placeholder="nome do usuário" autocomplete="username">
+        </p>
+
+        <p>
+            <label for="idia">Data</label>
+            <input type="date" name="dia" id="idia">
+        </p>
+
+        <p>
+            <label for="isen">Senha:</label>
+            <input type="password" name="sen" id="isen" required minlength="8" placeholder="minimo 8 letras" autocomplete="current-password">
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+            
+        </p>
+    </form>
+    <!-- a função auto complete serve para sugerir informações já digitadas na caixa de texto do formulários.
+     a função required significa requisição (campo obrigatório) onde só será enviado informações para o PHP se for digitado o campo do texto.
+     a função minlength ou maxlength serve para dizer o mínimo e máximo de caracteres dentro da caixa de texto. 
+     as funções max e min geralmente são usados parapara dizer o mínimo e máximo de números dentro da caixa de texto. 
+     a função step serve para colocar valor aceito entre números inteiros usado bastante para fazer média  ex 5.5 
+     as tags input são bem completas tem uma pra cada atividade como inserir data, mês, email,telefone, entre outros...
+     O placeholder é um atributo do HTML que cumpre a função de fornecer ao usuário uma dica que descreve o valor esperado em um dado campo de entrada.ex: (xx)xxxxx-xxxx na caixa de texto para sugerir o preenchimento do telefone.
+     tag fieldset para agrupar campos do formulário
+     tag legend dá um titulo ao fieldset
+     Estudar mais sobre regex (expressões regulares)-->
+    
+</body>
+</html>

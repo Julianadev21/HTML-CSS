@@ -11,10 +11,13 @@
 <body>
     <h1> Meu primeiro formulário </h1>
 
-    <form action="cadastro.php" autocomplete="off">
+    <form action="cadastro.php" method="post" autocomplete="off">
         <!-- função action relacionar os dados do formulário a um servidor.
-         função autocomplete fica lembrando os dados da digitados na caixa
-         tag label(etiqueta) faz relação da caixa doformulário com seu nome ou título. -->
+         função autocomplete fica lembrando os dados da digitados na caixa.
+
+         tag label(etiqueta) faz relação da caixa do formulário com seu nome ou título.
+
+         metodos get o dado do formulário fica visivel na url (utilizando até 3mil caracteres),podendo ser usado para dados que não oferecem risco tipo uma pesquisa no google já o post o dado do formulário fica oculto, porém não significa que está seguro. Mais usado para dados sensíveis como cadastro pessoal,fotos. Se os dados passarem de 3mil bytes tem que ser usado o método post. -->
 
         <p><label for="inome">Nome:</label> <input type="text" name="nome" id="inome"></p>
 
